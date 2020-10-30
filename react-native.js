@@ -22,5 +22,6 @@ module.exports = {
   rules: {
     'react-native/no-raw-text': 2,
     'react-native/no-single-element-style-arrays': 2,
+    'no-use-before-define': ['warn', { variables: false }],
   },
 };
