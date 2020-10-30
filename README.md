@@ -71,28 +71,6 @@ yarn add --dev @agathongroup/eslint-config eslint babel-eslint prettier eslint-c
 }
 ```
 
-#### Use with Create React App
-
-Until recently there was no easy way to extend the default ESLint configuration with CRA. This was particularly problematic as ESLint is run during production builds (with `react-scripts build`), and lint errors would result in build failures.
-
-CRA now supports an [experimental method to extend ESLint](https://create-react-app.dev/docs/setting-up-your-editor/#experimental-extending-the-eslint-config). Here's how it works with this configuration:
-
-1. Extend the base config (`react-app`) in your ESLint configuration:
-
-```json
-{
-  "extends": ["react-app", "@agathongroup/eslint-config/react"]
-}
-```
-
-2. Set the `EXTEND_ESLINT` environment variable in your `.env` file (for local development) and in your hosting providers environment variables configuration (for remote builds):
-
-```
-EXTEND_ESLINT=true
-```
-
-This will ensure that the same rule set is enforced for local development and production builds.
-
 ### React Native Config
 
 Includes everything in the default config, plus environment specification and react-native specific rules with
