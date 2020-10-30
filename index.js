@@ -10,14 +10,14 @@ module.exports = {
   rules: {
     // Best Practices
     'no-console': ['warn', { allow: ['warn', 'error'] }],
-    curly: 'error',
+    curly: 'warn',
     eqeqeq: ['error', 'always'],
     'no-eq-null': 'error',
-    'no-use-before-define': ['error', 'nofunc'],
+    'no-use-before-define': 'warn',
 
     // ES6+
     'no-duplicate-imports': 'error',
-    'prefer-const': 'error',
-    'prefer-template': 'error',
+    'prefer-const': 'warn',
+    'prefer-template': 'warn',
   },
 };
