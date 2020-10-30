@@ -419,6 +419,14 @@ This rule prevents characters that you may have meant as JSX escape characters f
 
 </details>
 
+<details>
+<summary>react/react-in-jsx</summary>
+
+[DISABLE missing React variable when using JSX](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md)
+
+This is rule is turned "off" because we use `React` as a global variable.
+</details>
+
 ### React Native Specific Rules
 
 You can view all available react native rules in the [eslint-plugin-react-native](https://github.com/intellicode/eslint-plugin-react-native#list-of-supported-rules) repo. The following rules are enforced:
