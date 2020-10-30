@@ -1,0 +1,28 @@
+{
+  "name": "@agathongroup/eslint-config",
+  "version": "1.0.0",
+  "description": "Agathon's ESLint configuration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agathongroup/eslint-config.git"
+  },
+  "keywords": [],
+  "author": "Agathon Group (https://www.agathongroup.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agathongroup/eslint-config/issues"
+  },
+  "homepage": "https://github.com/agathongroup/eslint-config#readme",
+  "peerDependencies": {
+    "babel-eslint": "^10.x.x",
+    "eslint": "^6.x.x",
+    "eslint-config-prettier": "^6.x.x",
+    "prettier": "^2.x.x"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
