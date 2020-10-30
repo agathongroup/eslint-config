@@ -9,7 +9,7 @@ module.exports = {
   },
   rules: {
     // Best Practices
-    'no-console': ['error', { allow: ['warn', 'error'] }],
+    'no-console': ['warn', { allow: ['warn', 'error'] }],
     curly: 'error',
     eqeqeq: ['error', 'always'],
     'no-eq-null': 'error',
