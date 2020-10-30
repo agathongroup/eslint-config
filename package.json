@@ -1,6 +1,6 @@
 {
   "name": "@agathongroup/eslint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Agathon's ESLint configuration",
   "main": "index.js",
   "scripts": {
