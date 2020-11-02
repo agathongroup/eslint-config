@@ -2,7 +2,6 @@
 
 ## Table of Contents
 
-- [Installation](#installation)
 - [Usage](#usage)
   - [Default Config](#default-config)
   - [React Config](#react-config)
