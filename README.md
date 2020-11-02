@@ -16,22 +16,6 @@
   - [React Native Specific Rules](#react-native-specific-rules)
 - [Overriding Rules](#overriding-rules)
 
-## Installation
-
-**1. Install dependencies**
-
-```sh
-yarn add --dev @agathongroup/eslint-config eslint babel-eslint prettier eslint-config-prettier
-```
-
-**2. Create an `.eslintrc` file at the root of your project and add the following:**
-
-```json
-{
-  "extends": "@agathongroup"
-}
-```
-
 ## Usage
 
 There are three ESLint configurations available for your usage:
@@ -42,7 +26,17 @@ There are three ESLint configurations available for your usage:
 
 ### Default Config
 
+The default includes non specific frontend framework rules. This configuration can be used in vanilla JS, Node, or non front-end framework projects.
+
 **In your `.eslintrc`:**
+
+**1. Install dependencies**
+
+```sh
+yarn add --dev @agathongroup/eslint-config eslint babel-eslint prettier eslint-config-prettier
+```
+
+**2. In your `.eslintrc`:**
 
 ```json
 {
@@ -59,11 +53,13 @@ Includes everything in the default config, plus environment specification and re
 - [`eslint-plugin-react`](https://github.com/yannickcr/eslint-plugin-react)
 - [`eslint-plugin-jsx-a11y`](https://github.com/evcohen/eslint-plugin-jsx-a11y)
 
+**1. Install dependencies**
+
 ```sh
 yarn add --dev @agathongroup/eslint-config eslint babel-eslint prettier eslint-config-prettier eslint-plugin-react eslint-plugin-jsx-a11y
 ```
 
-**In your `.eslintrc`:**
+**2. In your `.eslintrc`:**
 
 ```json
 {
@@ -77,11 +73,13 @@ Includes everything in the default config, plus environment specification and re
 
 - [`eslint-plugin-react-native`](https://github.com/intellicode/eslint-plugin-react-native)
 
+**1. Install dependencies**
+
 ```sh
 yarn add --dev @agathongroup/eslint-config eslint babel-eslint prettier eslint-config-prettier eslint-plugin-react eslint-plugin-react-native
 ```
 
-**In your `.eslintrc`:**
+**2. In your `.eslintrc`:**
 
 ```json
 {
@@ -426,6 +424,15 @@ This rule prevents characters that you may have meant as JSX escape characters f
 
 This is rule is turned "off" because we use `React` as a global variable.
 </details>
+
+<details>
+<summary>react/prop-types</summary>
+
+[DISABLE prop types validation](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md)
+
+This is rule is turned "off" because prop types are not generally used in our projects.
+</details>
+
 
 ### React Native Specific Rules
 
